@@ -1,5 +1,6 @@
 set encoding=utf-8
 scriptencoding utf-8
+set fileencoding=utf-8
 set nu
 
 call plug#begin('~/.vimfiles/plugged')
@@ -25,6 +26,8 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Main options
 syntax on
 set noerrorbells
+set autoindent
+set smartindent
 set incsearch
 set exrc
 set secure
