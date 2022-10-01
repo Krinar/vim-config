@@ -3,19 +3,20 @@ scriptencoding utf-8
 set fileencoding=utf-8
 set nu
 
-call plug#begin('~/.vimfiles/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'prabirshrestha/vim-lsp' " vim-lsp
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " options for vim-airline
 let g:airline_theme='dark'
 
 " options for YouCompleteMe
-let g:ycm_global_ycm_extra_conf='~/.vimfiles/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 set previewpopup=height:10,width:60,highlight:PMenuSbar
 set completeopt+=popup
@@ -36,6 +37,7 @@ set ch=1
 set smartindent
 set wildmenu
 filetype plugin on
+colorscheme darkblue
 colorscheme gruvbox
 set tabstop=4
 set noexpandtab
